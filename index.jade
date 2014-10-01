@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        style.
+            .statue { height: 200px; }
+            td { border-style: solid; border-width: medium; }
+    body
+        table
+            tr
+                th
+                for size in sizes
+                    th= size + ' px'
+            for quality in qualities
+                tr
+                    th= quality
+                    for size in sizes
+                        - filename = 'resized_images/' + size + '_' + quality + '.jpg'
+                        td
+                            b= file_sizes[filename]
+                            img.statue(src=filename)
+                    

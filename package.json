@@ -1,0 +1,10 @@
+{
+    "name": "image_grid",
+    "author": "Tim Jones",
+    "version": "0.0.1",
+    "dependencies": {
+        "gm": "*",
+        "mkdirp": "*",
+        "jade": "*"
+    }
+}
